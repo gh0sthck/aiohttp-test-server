@@ -1,18 +1,8 @@
 import logging
-import os
 
-import sqlalchemy
 from aiohttp import web
 
 app = web.Application()
-
-DB_USERNAME = os.environ.get("DB_USERNAME")
-DB_HOST = os.environ.get("DB_HOST")
-DB_NAME = os.environ.get("DB_NAME")
-DB_PASS = os.environ.get("DB_PASS")
-#localhost/aiohttptestserver
-#db_engine = sqlalchemy.create_engine(f"postgresql+asyncpg://{DB_USERNAME}:{DB_PASS}@{DB_HOST}/{DB_NAME}",
-                                     #echo=True)
 
 
 def setting_logging() -> None:
